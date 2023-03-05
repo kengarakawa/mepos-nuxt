@@ -1,0 +1,27 @@
+<script setup>
+import Datepicker from '@vuepic/vue-datepicker';
+import '@vuepic/vue-datepicker/dist/main.css';
+const theDate = ref()
+const theDateValue = ref(null)
+
+
+
+  
+
+
+</script>
+
+<template>
+  DatePicker : <Datepicker ref="theDate" :range="false" v-model="theDateValue" :enable-time-picker="false" />
+  {{ theDateValue }}
+  
+  <hr>
+
+  data: {{ data }} 
+  <hr />
+  pending : {{ pending }}  
+  <hr />
+  error :{{  error }}
+  <hr />
+  
+</template>
